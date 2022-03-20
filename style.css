@@ -554,10 +554,10 @@ body {
         background-color: #605e5e;
         border-radius: 10px;
         border: none;
-        width: 130px;
+        width: 135px;
     }
     #resume a {
-        font-size: 13px;
+        font-size: 10px;
         text-decoration: none;
     }
     #exp {
