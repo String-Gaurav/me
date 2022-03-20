@@ -1,648 +1,265 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
-html {
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    background: url(./icons/bg.jpg);
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Poppins;
-    color: rgb(233, 227, 227);
-}
-
-.navbar {
-    top: 0px;
-    position: fixed;
-    display: flex;
-    padding: 5px;
-    z-index: 2;
-    height: 50px;
-    width: 100%;
-}
-
-.navbar ul {
-    position: fixed;
-    display: flex;
-    right: 10px;
-    margin-right: 5px;
-    align-items: center;
-    top: 10px;
-}
-
-.navbar ul li {
-    padding-left: 10px;
-    list-style: none;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    font-size: 22px;
-    padding: 10px;
-}
-
-.navbar ul li a:hover {
-    transition: 0.2s;
-    text-decoration: 6px underline rgb(56 181 124);
-    /* text-decoration: 6px underline rgb(0 66 255); */
-    ;
-}
-
-.logo {
-    position: fixed;
-    font-size: 35px;
-    pointer-events: none;
-}
-
-.logo #sp1 {
-    color: rgb(76, 75, 75);
-    pointer-events: none;
-    text-decoration: 3px underline rgb(56 181 124);
-}
-
-.logo #sp2 {
-    color: rgb(56 181 124);
-    pointer-events: none;
-}
-
-.navbar::before {
-    content: "";
-    background-color: rgb(44, 41, 41);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 70px;
-    z-index: -1;
-    width: 100%;
-}
-
-#hm {
-    position: relative;
-    display: flex;
-    top: 100px;
-    padding-bottom: 20px;
-}
-
-#hm img {
-    width: 55%;
-}
-
-#hm .box1 h1 {
-    font-size: 65px;
-    color: #605e5e;
-    padding: 10px;
-}
-
-#hm .box1 h1 span {
-    color: #605e5e;
-}
-
-#hm .box1 h1 span:hover {
-    text-decoration: 3px underline rgb(56 181 124);
-}
-
-.fa {
-    padding: 20px;
-    font-size: 25px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 60%;
-}
-
-.sm a,
-.sm button {
-    margin: 10px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-github {
-    background: white;
-    color: black;
-}
-
-.wave {
-    animation-name: wave;
-    animation-duration: 2.1s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(16deg);
-    }
-    20% {
-        transform: rotate(-6deg);
-    }
-    30% {
-        transform: rotate(16deg);
-    }
-    40% {
-        transform: rotate(-4deg);
-    }
-    50% {
-        transform: rotate(16deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-#resume {
-    height: 50px;
-    background-color: #605e5e;
-    border-radius: 15px;
-    border: none;
-    width: 150px;
-}
-
-#resume a {
-    font-size: 16px;
-    text-decoration: none;
-}
-
-#resume:hover {
-    background-color: rgb(56 181 124);
-}
-
-#hm .box1 p {
-    font-size: 40px;
-    color: rgb(233, 227, 227);
-    padding: 10px;
-}
-
-#exp {
-    position: relative;
-    top: 100px;
-}
-
-#exp h1 {
-    font-size: 45px;
-    text-align: center;
-    color: #605e5e;
-    text-decoration: 6px underline rgb(56 181 124);
-}
-
-#s {
-    position: relative;
-    top: 0px;
-    width: 100%;
-    margin-top: 4px;
-    z-index: 0;
-    margin: auto;
-}
-
-#s div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.job {
-    margin-top: 15px;
-    display: flex;
-    text-align: center;
-    opacity: 10;
-}
-
-.job img {
-    position: relative;
-    margin-top: 0px;
-    margin: auto;
-    width: 10%;
-    border-radius: 100%;
-}
-
-.job img:hover {
-    box-shadow: 2px 2px 10px rgb(182, 182, 182);
-}
-
-.skills {
-    position: relative;
-    top: 70px;
-}
-
-.skills h1 {
-    font-size: 45px;
-    text-align: center;
-    color: #605e5e;
-    text-decoration: 6px underline rgb(56 181 124);
-}
-
-.box4 {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    font-size: 25px;
-}
-
-.box4 img {
-    width: 50%;
-}
-
-.sk {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-}
-
-.sk2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-}
-
-.sk div,
-.sk2 div {
-    display: flex;
-    font-size: 25px;
-    margin: 5% 5%;
-    padding: auto;
-}
-
-#blog {
-    position: relative;
-    top: 90px;
-}
-
-#blog h1 {
-    font-size: 45px;
-    text-align: center;
-    color: #605e5e;
-    text-decoration: 6px underline rgb(56 181 124);
-}
-
-.blog1 {
-    display: flex;
-    margin-top: 40px;
-}
-
-.bl {
-    border: 1px solid rgb(182, 182, 182);
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    margin: 15px 15px;
-    width: 40%;
-}
-
-.bl h3 {
-    text-decoration: 3px underline rgb(56 181 124);
-}
-
-.bl:hover {
-    box-shadow: 2px 2px 10px rgb(182, 182, 182);
-}
-
-.a {
-    width: 100px;
-    display: block;
-    margin-top: 10px;
-    border: none;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 10px;
-    background-color: rgb(59, 59, 59);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-}
-
-.a:hover {
-    background-color: rgb(56 181 124);
-    color: rgb(10, 10, 10);
-}
-
-.contact {
-    position: relative;
-    top: 90px;
-}
-
-.contact h1 {
-    font-size: 45px;
-    text-align: center;
-    color: #605e5e;
-    text-decoration: 6px underline rgb(56 181 124);
-}
-
-.cont1 {
-    display: flex;
-}
-
-.cont1 span {
-    position: relative;
-    top: 50px;
-    height: 300px;
-    width: 1px;
-    background: #f5f1f1;
-}
-
-.con2 {
-    text-align: center;
-    margin: auto;
-}
-
-.con2 p {
-    padding: 20px;
-    font-size: 25px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Singh</title>
+    <link rel="logo" href="./icons/logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-/* for tablets */
+</head>
 
-@media screen and (max-width: 1100px) {
-    #hm {
-        flex-direction: column;
-        top: 70px;
-    }
-    #hm .box1 h1 {
-        font-size: 60px;
-        color: #605e5e;
-        padding: 10px;
-    }
-    #hm .box1 h1 span {
-        color: #605e5e;
-    }
-    #hm .box1 p {
-        font-size: 30px;
-        padding: 10px;
-    }
-    #hm img {
-        width: 100%;
-    }
-    #exp {
-        position: relative;
-        top: 70px;
-    }
-    .box2 {
-        margin-top: 40px;
-    }
-    .job h3 {
-        font-size: 15px;
-    }
-    .skills {
-        top: 70px;
-        margin-bottom: 70px;
-    }
-    .sk {
-        margin-top: 50px;
-        margin: auto;
-        justify-content: space-around;
-    }
-    .sk2 {
-        margin-top: 70px;
-        margin: 20px 20px;
-        justify-content: space-around;
-    }
-    .sk div,
-    .sk2 div {
-        display: flex;
-        font-size: 15px;
-        margin: 3% 3%;
-        padding: auto;
-    }
-    .box4 img {
-        width: 50%;
-    }
-    #ist img {
-        width: 40%;
-    }
-    #blog {
-        display: block;
-        position: relative;
-        top: 0px;
-    }
-    .blog1 {
-        padding-top: -10px;
-    }
-    .bl {
-        border: 1px solid rgb(182, 182, 182);
-        padding: 20px;
-        margin-top: 10px;
-        border-radius: 10px;
-        margin: 10px 10px;
-        font-size: 10px;
-    }
-    .contact {
-        position: relative;
-        top: 70px;
-    }
-    .form button {
-        height: 50px;
-        width: 200px;
-        font-size: 25px;
-    }
-    .lab {
-        color: #605e5e;
-        font-size: 25px;
-    }
-    .form {
-        padding: 20px;
-        margin: auto;
-    }
-    #ms {
-        width: auto;
-        border-bottom: 1px solid #605e5e;
-    }
-}
+<body>
+    <section class="navbar">
+
+        <div class="logo">
+            <span id="sp1">Gaurav</span>
+            <span id="sp2">Singh</span>
+
+        </div>
 
 
-/* for phones */
+        <div id="slidebar">
+            <div id="toggle" onclick="show()">
 
-@media screen and (max-width: 650px) {
-    .navbar {
-        position: sticky;
-        flex-direction: row-reverse;
-    }
-    .navbar::before {
-        position: fixed;
-        height: 60px;
-        z-index: 1;
-    }
-    .navbar .logo {
-        position: fixed;
-        z-index: 2;
-        right: 10px;
-    }
-    .logo {
-        font-size: 29px;
-    }
-    .navbar ul {
-        top: 70px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin-left: 2.5px;
-        right: 0px;
-        margin-top: 29px;
-    }
-    .navbar ul li a {
-        margin-top: 30px;
-        padding-top: 10px;
-        padding: 10px;
-        display: block;
-        color: rgb(182, 182, 182);
-    }
-    #slidebar #toggle {
-        position: fixed;
-        top: 10px;
-        left: 15px;
-    }
-    #toggle span {
-        height: 5px;
-        width: 40px;
-        background-color: rgb(182, 182, 182);
-        display: block;
-        margin-top: 4px;
-        z-index: 0;
-    }
-    #slidebar {
-        position: absolute;
-        width: 300px;
-        height: 100%;
-        background: #000000d1;
-        left: -330px;
-        transition: .4s;
-        z-index: 1;
-        top: 0px;
-    }
-    #slidebar.active {
-        left: -100px;
-        position: fixed;
-    }
-    #hm {
-        flex-direction: column;
-        top: 0px;
-    }
-    #hm .box1 {
-        font-size: 30px;
-        color: rgb(76, 75, 75);
-    }
-    #hm .box1 h1 {
-        font-size: 60px;
-        color: #605e5e;
-        padding: 10px;
-        padding-top: 15px;
-    }
-    #hm .box1 h1 span {
-        color: #605e5e;
-    }
-    #hm .box1 p {
-        font-size: 30px;
-        padding: 10px;
-    }
-    #hm img {
-        width: 100%;
-    }
-    .fa {
-        padding: 15px;
-        font-size: 10px;
-        width: 25px;
-        text-align: center;
-        text-decoration: none;
-    }
-    #resume {
-        height: 40px;
-        background-color: #605e5e;
-        border-radius: 13px;
-        border: none;
-        width: 120px;
-    }
-    #exp {
-        position: relative;
-        top: 70px;
-    }
-    #exp h1 {
-        font-size: 35px;
-        text-align: center;
-    }
-    #s {
-        top: 0px;
-        height: 1050px;
-        width: 100%;
-        background-color: rgba(182, 182, 182, 0);
-        height: 1000px;
-    }
-    .job h1 {
-        font-size: 20px;
-    }
-    .job span {
-        display: none;
-    }
-    .job {
-        margin-top: 3px;
-        width: 60%;
-        margin: auto;
-        padding-top: 0px;
-    }
-    #s div {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1px;
-    }
-    .job img {
-        position: relative;
-        margin-top: 0px;
-        margin: auto;
-        width: 30%;
-        height: 30%;
-    }
-    .skills {
-        top: 50px;
-    }
-    .skills div {
-        margin-top: 20px;
-    }
-    #blog {
-        position: relative;
-        top: 0px;
-    }
-    .blog1 {
-        display: flex;
-        justify-content: space-around;
-    }
-    .a {
-        font-size: 15px;
-        width: 60px;
-    }
-    .contact {
-        position: relative;
-        top: 30px;
-    }
-    .contact h1 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .cont2 {
-        margin-top: 30px;
-    }
-    .con2 p {
-        padding: 10px;
-        font-size: 20px;
-    }
-}
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <ul class="ul">
+                <li> <a onclick="show()" href="#hm">Home</a></li>
+
+                <li> <a onclick="show()" href="#exp">Experince</a></li>
+
+                <li> <a onclick="show()" href="#skill">Skills</a></li>
+
+                <li> <a onclick="show()" href="#blog">Blogs</a></li>
+
+                <li> <a onclick="show()" href="#co">Contact</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="hm">
+
+        <div class="box1">
+            <h1>Hey folks! <span>Gaurav</span> here <span class="wave">👋🏻</span></h1>
+            <p>9+ years of experience as an Automation Test Engineer and has worked primarily in the BFSI domain. Most of my experience is in Payment Solutions and Financial Banking. Searching for an opportunity where I can have growth in my skillset and
+                become an even more productive asset for the organization.</p>
+
+            <div class="sm">
+                <a href="https://www.linkedin.com/in/gaurav-singh27/" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-github"></a>
+
+                <button id="resume"><a href="https://drive.google.com/file/d/1H1amdwlEQEiPmtW5SiY8KW1e7zjz27DG/view" target="_blank">See my resume</a></button>
+            </div>
+        </div>
+
+
+        <img src="./icons/manual-testing.png" alt="">
+
+
+    </section>
+
+
+
+    <Section id="exp">
+
+        <h1>
+            Experince
+        </h1>
+
+        <div id="s">
+
+            <div class="box2">
+
+
+
+                <div class="job">
+
+                    <img id="mph" src="./icons/mph.jpg" alt="">
+                    <p> Feb. 2021 - Present <br> Mphasis
+                        <BR> Module Lead-Testing</BR>
+                    </p>
+                </div>
+
+
+
+                <div class="job"> <span></span>
+                    <img src="./icons/fin.jpg" alt="">
+                    <p> June 2017 - Feb 2021 <br> Finserv
+                        <BR>STAE</BR>
+                    </p>
+                </div>
+
+
+
+
+                <div class="job">
+
+                    <img id="aar" src="./icons/aar.jpg" alt="">
+                    <p> May 2015 - Apr 2017 <br> AartekOne
+                        <BR> Test Engineer</BR>
+                    </p>
+                </div>
+
+
+
+                <div class="job">
+
+                    <img id="ask" src="./icons/ask.jpg" alt="">
+                    <p> Feb. 2015 - May 2015 <br> ASK-EHS PVT. LTD
+                        <BR> Test Engineer</BR>
+                    </p>
+                </div>
+
+
+
+                <div class="job">
+                    <img src="./icons/ibm.jpg" alt="">
+                    <p> Oct. 2011-Nov 2012 <br> IBM
+                        <BR> Tech Server Ops.</BR>
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </Section>
+
+
+
+
+
+
+    <section id="skill" class="skills">
+        <h1>Skills</h1>
+
+        <div id="skl">
+
+            <div class="sk">
+
+
+                <div class="box4"> <img src="./icons/java__1_-removebg-preview.png" alt=""> Java</div>
+                <!-- <div class="box4"> <img src="./icons/git-removebg-preview.png" alt=""> Git</div> -->
+                <div class="box4"> <img src="./icons/cucumber.png" alt=""> Cucumber</div>
+
+                <div class="box4"> <img src="./icons/jenkin-removebg-preview.png" alt=""> Jenkins</div>
+
+
+
+            </div>
+
+
+            <div class="sk2">
+
+                <div class="box4"> <img src="./icons/postman__2_-removebg-preview (1).png" alt=""> Postman</div>
+                <div class="box4"><img id="sele" src="./icons/selenium.png" alt=""> Selenium</div>
+
+                <div id="ist" class="box4"> <img src="./icons/istqb.png" alt=""> ISTQB</div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="blog">
+
+        <h1>Blogs</h1>
+
+
+
+        <div class="blog1">
+            <div class="bl">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, tempora!
+
+                </p>
+                <div class="a">
+                    <a href="">Read More</a>
+                </div>
+            </div>
+
+            <div class="bl">
+                <h3>Heading</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, tempora!
+                <div class="a">
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="bl">
+                <h3>Heading</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, tempora!
+                <div class="a">
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="co" class="contact">
+        <h1>Contact</h1>
+
+
+
+        <div class="con2">
+            <p>&#128231; - sin.gaurav10@gmail.com</p>
+            <p>&#128222; - +91 84697 63533 </p>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
