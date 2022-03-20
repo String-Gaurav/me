@@ -15,6 +15,7 @@ body {
 }
 
 .navbar {
+    top: 0px;
     position: fixed;
     display: flex;
     padding: 5px;
@@ -257,7 +258,7 @@ body {
 }
 
 .box4 img {
-    width: 100%;
+    width: 50%;
 }
 
 .sk {
@@ -272,10 +273,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-}
-
-#ist img {
-    width: 50%;
 }
 
 .sk div,
@@ -418,6 +415,7 @@ body {
     .sk2 {
         margin-top: 70px;
         margin: 20px 20px;
+        justify-content: space-around;
     }
     .sk div,
     .sk2 div {
@@ -427,7 +425,7 @@ body {
         padding: auto;
     }
     .box4 img {
-        width: 100%;
+        width: 50%;
     }
     #ist img {
         width: 40%;
@@ -476,7 +474,7 @@ body {
 
 @media screen and (max-width: 650px) {
     .navbar {
-        position: relative;
+        position: sticky;
         flex-direction: row-reverse;
     }
     .navbar::before {
@@ -570,7 +568,7 @@ body {
     #resume {
         height: 40px;
         background-color: #605e5e;
-        border-radius: 15px;
+        border-radius: 13px;
         border: none;
         width: 120px;
     }
@@ -619,19 +617,6 @@ body {
     }
     .skills div {
         margin-top: 20px;
-    }
-    .sk2 {
-        margin-top: 70px;
-        margin: auto;
-        margin-left: 30px;
-    }
-    .sk div,
-    .sk2 div {
-        display: flex;
-        font-size: 15px;
-        margin: 3% 3%;
-        padding: auto;
-        justify-content: space-evenly;
     }
     #blog {
         position: relative;
