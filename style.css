@@ -236,7 +236,7 @@ body {
     font-size: 15px;
 }
 
-.ul {
+.ul2 {
     font-size: 20px;
     width: 100%;
 }
@@ -462,7 +462,7 @@ body {
         flex-direction: column;
         list-style: none;
         margin-left: 2.5px;
-        right: -50px;
+        right: 20px;
         margin-top: 29px;
     }
     .navbar ul li a {
@@ -573,8 +573,10 @@ body {
     .bi p {
         font-size: 8px;
     }
-    .ul {
-        width: 100%;
+    .ul2 {
+        position: relative;
+        right: 0px;
+        width: 80%;
         font-size: 13px;
     }
     .box4 {
