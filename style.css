@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    /* background: url(./icons/bg.jpg); */
     background: url(./icons/bg.jpg);
 }
 
@@ -60,7 +61,6 @@ body {
 .logo #sp1 {
     color: rgb(76, 75, 75);
     pointer-events: none;
-    text-decoration: 3px underline rgb(56 181 124);
 }
 
 .logo #sp2 {
@@ -203,35 +203,42 @@ body {
     text-decoration: 6px underline rgb(56 181 124);
 }
 
-#s {
-    position: relative;
-    top: 0px;
-    width: 100%;
-    margin-top: 4px;
-    z-index: 0;
-    margin: auto;
-}
-
-#s div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 30px;
+.box2 div {
+    margin-top: 30px;
 }
 
 .job {
     margin-top: 15px;
     display: flex;
-    text-align: center;
-    opacity: 10;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.job div {
+    margin: 20px 20px;
 }
 
 .job img {
-    position: relative;
-    margin-top: 0px;
-    margin: auto;
-    width: 10%;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
+}
+
+.bi {
+    width: 20%;
+}
+
+.bi h2 {
+    font-size: 20px;
+}
+
+.bi p {
+    font-size: 15px;
+}
+
+.ul {
+    font-size: 20px;
+    width: 100%;
 }
 
 .job img:hover {
@@ -266,15 +273,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-/* .sk div,
-.sk2 div {
-    display: flex;
-    font-size: 25px;
-    margin: 5% 5%;
-    padding: auto;
-} */
 
 #blog {
     position: relative;
@@ -434,23 +432,6 @@ body {
         position: relative;
         top: 70px;
     }
-    .form button {
-        height: 50px;
-        width: 200px;
-        font-size: 25px;
-    }
-    .lab {
-        color: #605e5e;
-        font-size: 25px;
-    }
-    .form {
-        padding: 20px;
-        margin: auto;
-    }
-    #ms {
-        width: auto;
-        border-bottom: 1px solid #605e5e;
-    }
 }
 
 
@@ -481,7 +462,7 @@ body {
         flex-direction: column;
         list-style: none;
         margin-left: 2.5px;
-        right: 0px;
+        right: -50px;
         margin-top: 29px;
     }
     .navbar ul li a {
@@ -511,7 +492,7 @@ body {
         background: #000000d1;
         left: -330px;
         transition: .4s;
-        z-index: 1;
+        z-index: 10;
         top: 0px;
     }
     #slidebar.active {
@@ -554,10 +535,10 @@ body {
         background-color: #605e5e;
         border-radius: 10px;
         border: none;
-        width: 129px;
+        width: 130px;
     }
     #resume a {
-        font-size: 10px;
+        font-size: 13px;
         text-decoration: none;
     }
     #exp {
@@ -568,51 +549,48 @@ body {
         font-size: 35px;
         text-align: center;
     }
-    #s {
-        top: 0px;
-        height: 1050px;
+    .box2 {
+        margin-left: 0px;
         width: 100%;
-        background-color: rgba(182, 182, 182, 0);
-        height: 1000px;
-    }
-    .job h1 {
-        font-size: 20px;
-    }
-    .job span {
-        display: none;
     }
     .job {
-        margin-top: 3px;
-        width: 60%;
-        margin: auto;
-        padding-top: 0px;
-    }
-    #s div {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1px;
+        width: 100%;
+    }
+    .job div {
+        margin: 0px 0px;
     }
     .job img {
-        position: relative;
-        margin-top: 0px;
-        margin: auto;
-        width: 30%;
-        height: 30%;
+        width: 40px;
+        height: 40px;
+    }
+    .bi {
+        width: 34%;
+    }
+    .bi h2 {
+        font-size: 15px;
+    }
+    .bi p {
+        font-size: 8px;
+    }
+    .ul {
+        width: 100%;
+        font-size: 13px;
     }
     .box4 {
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
-        margin: 50px;
+        margin: auto;
         font-size: 15px;
     }
     .box4 img {
-        width: 100%;
+        width: 60px;
     }
     .sk,
     .sk2 {
         display: flex;
-        justify-content: center;
+        padding: 20px;
     }
     #blog {
         position: relative;
@@ -620,11 +598,15 @@ body {
     }
     .blog1 {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+    }
+    .bl {
+        width: 100%;
     }
     .a {
         font-size: 15px;
-        width: 60px;
+        width: 100px;
     }
     .contact {
         position: relative;
